@@ -1,0 +1,83 @@
+lead_analysis_task:
+  description: >
+    Analyze the lead's form responses to extract critical information that
+    might be useful for scoring them, planning a strategy to pitch them,
+    or anything that might be helpful for taking next steps on selling
+    them our {product_name}.
+
+    We at {company} are more focused on {icp_description}.
+
+    Let's not spend much time in leads that are not a good fit for us.
+    Short answers from leads are a yellow flag
+
+
+    Lead Form Responses:
+    {form_response}
+
+
+    {product_name}:
+    {product_description}
+  expected_output: >
+    Highlighting key implict or explicit information from the lead's form
+    responses that can be used for further research and scoring.
+    We are looking for insights that can help us understand the lead's
+    industry, company, and potential use cases.
+
+research_task:
+  description: >
+    Using the information gathered from the lead's data, conduct preliminary
+    research on the lead's industry, company background, and potential use
+    cases for {product_name}.
+    Focus on finding relevant data that can aid in scoring the lead and
+    planning a strategy to pitch them {product_name}.
+
+    Let's not spend much time in leads that are not a good fit for us.
+    Short answers from leads are a yellow flag.
+
+
+    Lead Form Responses:
+    {form_response}
+
+
+    {product_name}:
+    {product_description}
+  expected_output: >
+    A research report that includes:
+    - Industry overview and trends relevant to the lead's company.
+    - Company-specific information like size, market position, and recent news.
+    - Potential {product_name} use cases and benefits specific to the lead's industry and company.
+    - Any other insights that would aid in scoring and planning.
+    The report should be concise and actionable.
+
+scoring_and_planning_task:
+  description: >
+    Utilize the context and the lead's form response to score the lead.
+    Consider factors such as industry relevance, company size, specific {product_name}
+    use case potential, and readiness for partnership.
+    Take into account the wording used on the form response and how lenghty
+    the response was to score the lead.
+    Based on the score, suggest the most appropriate stratefy for the lead.
+    Integrate this information to outline how {company} and {product_name} can
+    specifically benefit this lead.
+
+    We are more focused on {icp_description}
+
+    Let's not spend much time in leads that are not a good fit for us.
+    Smaller comapnies will want to pay less.
+    Short answers from leads are a yellow flag.
+    Let's be a little pessimistic and focus the high scores on deals that are
+    more likely to close and trully great.
+
+
+    Lead Form Responses:
+    {form_response}
+
+
+    {product_name}:
+    {product_description}
+  expected_output: >
+    A comprehensive evaluation report for each lead that includes:
+    - A score from 0 to 10
+    - A tailored summary of how {company} and {product_name} can assist the lead.
+    - A list of talking points and ideas for an initial email and meeting, personalized for the lead.
+    This output should serve as a detailed guide for engaging with the lead effectively.
